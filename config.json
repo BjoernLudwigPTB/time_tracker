@@ -1,19 +1,19 @@
 {
-    "log_file": "~/Nextcloud/time_tracker/log.csv",
+    "log_file": "~/code/time_tracker/log.csv",
     "editor": "kate {LOG_FILE}",
     "report": "konsole --hide-menubar -e \"/bin/bash -c '{PY_BIN} report_generator.py; read'\"",
     "report_only_visual": "{PY_BIN} report_generator.py",
     "default_icon": "icons/23F1.png",
     "labels": [
-        ["FAMOUS work", "icons/2699.png"],
-        ["FAMOUS Communication", "icons/1F4E7.png"],
+        ["Coding", "icons/E1C1.png"],
+        ["Server and apps", "icons/2699.png"],
         ["---", ""],
-        ["Administrative tasks", "icons/1F4CE.png"],
-        ["Team Communication", "icons/E24A.png"],
+        ["Administrative tasks plus pilots", "icons/1F4CE.png"],
+        ["Team Communication", "icons/E249.png"],
+        ["Inventory", "icons/1F4DA.png"],
+        ["Services", "icons/E246.png"],
         ["---", ""],
-        ["Research and reading", "icons/1F4A1.png"],
-        ["Try out new tools", "icons/1F532.png"],
-        ["Other", "icons/1F518.png"],
-        ["Break", "icons/2615.png"]
+        ["EMPIR", "icons/E253.png"],
+        ["non-EMPIR research", "icons/1F4A1.png"]
     ]
 }
