@@ -3,17 +3,17 @@
     "editor": "kate {LOG_FILE}",
     "report": "konsole --hide-menubar -e \"/bin/bash -c '{PY_BIN} report_generator.py; read'\"",
     "report_only_visual": "{PY_BIN} report_generator.py",
-    "default_icon": "icons/23F1.png",
+    "default_icon": "icons/color/23F1.png",
     "labels": [
-        ["Coding", "icons/E1C1.png"],
-        ["Server and apps", "icons/2699.png"],
+        ["Coding", "icons/color/E1C1.png"],
+        ["Server and apps", "icons/color/2699.png"],
         ["---", ""],
-        ["Administrative tasks plus pilots", "icons/1F4CE.png"],
-        ["Team Communication", "icons/E249.png"],
-        ["Inventory", "icons/1F4DA.png"],
-        ["Services", "icons/E246.png"],
+        ["Administrative tasks plus pilots", "icons/color/1F4CE.png"],
+        ["Team Communication", "icons/color/E249.png"],
+        ["Inventory", "icons/color/1F4DA.png"],
+        ["Services", "icons/color/E246.png"],
         ["---", ""],
-        ["EMPIR", "icons/E253.png"],
-        ["non-EMPIR research", "icons/1F4A1.png"]
+        ["EMPIR", "icons/color/E253.png"],
+        ["non-EMPIR research", "icons/color/1F4A1.png"]
     ]
 }
