@@ -16,3 +16,4 @@ cd $PATH_TO_REPO
 # is defined by PATH_TO_REPO in line 4.
 nohup $PATH_TO_VENV/bin/python $PATH_TO_REPO/time_tracker.py &
 kdialog --passivepopup "Time Tracker is running with PID $!"
+

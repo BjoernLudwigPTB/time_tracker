@@ -49,7 +49,12 @@ while True:
     elif menu_item not in [None, '__TIMEOUT__', '__ACTIVATED__']:
 
         # log
-        report_string = str(datetime.datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S")) + ',' + menu_item + '\n'
+        if config["use_utc"]:
+            timestamp = datetime.datetime.utcnow()
+        else:
+            timestamp = datetime.datetime.now()
+        
+        report_string = str(timestamp.replace(microsecond=0)) + ',' + menu_item + '\n'
         f = open(log_file, 'a')
         f.write(report_string)
         f.close()
