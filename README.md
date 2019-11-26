@@ -2,7 +2,7 @@
 
 Small system tray utility to allow you to monitor your time usage
 . *time_tracker* is written to be used in the
-[KDE Plasma desktop environment](https://kde.org/plasma-desktop) and is
+[KDE Plasma desktop environment](https://kde.org) and is
 prepared to use some of its basic components like
 
 *   [konsole](https://konsole.kde.org/),
