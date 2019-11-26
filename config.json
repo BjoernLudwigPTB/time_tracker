@@ -9,12 +9,15 @@
         ["Coding", "icons/color/E1C1.png"],
         ["Server and apps", "icons/color/2699.png"],
         ["---", ""],
+        ["Services", "icons/color/E246.png"],
         ["Administrative tasks plus pilots", "icons/color/1F4E7.png"],
         ["Team Communication", "icons/color/E249.png"],
-        ["Inventory", "icons/color/1F4DA.png"],
-        ["Services", "icons/color/E246.png"],
+        ["Inventory", "icons/color/E24C.png"],
+        ["Internal affairs", "icons/color/E249.png"],
         ["---", ""],
         ["EMPIR", "icons/color/E253.png"],
-        ["non-EMPIR research", "icons/color/1F4A1.png"]
+        ["non-EMPIR research", "icons/color/1F4A1.png"],
+        ["---", ""],
+        ["University", "icons/color/1F4DA.png"]
     ]
 }
