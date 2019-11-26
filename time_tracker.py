@@ -40,7 +40,7 @@ while True:
         p = subprocess.Popen(cmd, cwd=os.getcwd())
         continue
 
-    elif menu_item == "Edit log":
+    elif menu_item == "Edit log file":
         cmd = shlex.split(config["editor"].format(LOG_FILE=log_file))
         p = subprocess.Popen(cmd)
         continue
