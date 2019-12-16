@@ -6,7 +6,7 @@ PATH_TO_REPO=~/code/time_tracker
 # Put here "/your/path/to/venv" where you would normally do
 #
 # $ source /your/path/to/venv/bin/activate
-PATH_TO_VENV=~/code/venvs/time_tracker
+PATH_TO_VENV=~/code/envs/time_tracker
 
 # Navigate to the repository folder
 cd $PATH_TO_REPO
