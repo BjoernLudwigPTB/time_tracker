@@ -36,12 +36,12 @@ while True:
         break
 
     elif menu_item == "Show report":
-        cmd = shlex.split(config["report"].format(PY_BIN=sys.executable))
+        cmd = shlex.split(config["report"].format(PY_BIN=sys.executable).replace("\\", "/"))
         p = subprocess.Popen(cmd, cwd=os.getcwd())
         continue
 
     elif menu_item == "Edit log":
-        cmd = shlex.split(config["editor"].format(LOG_FILE=log_file))
+        cmd = shlex.split(config["editor"].format(LOG_FILE=log_file).replace("\\", "/"))
         p = subprocess.Popen(cmd)
         continue
 
