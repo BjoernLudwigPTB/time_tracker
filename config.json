@@ -3,6 +3,7 @@
     "editor": "kate {LOG_FILE}",
     "report": "konsole --hide-menubar -e \"/bin/bash -c '{PY_BIN} report_generator.py; read'\"",
     "report_only_visual": "{PY_BIN} report_generator.py",
+    "report_days": 14,
     "default_icon": "icons/color/23F1.png",
     "use_utc": false,
     "labels": [

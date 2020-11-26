@@ -20,7 +20,7 @@ df = pandas.read_csv(log_file, parse_dates=[0], index_col=0)
 df = df.tz_localize("UTC").tz_convert("Europe/Berlin")
 
 # display only last two weeks of records
-cond = (df.index >= df.index.max() - pandas.Timedelta(days=14))
+cond = (df.index >= df.index.max() - pandas.Timedelta(days=config["report_days"]))
 df = df[cond]
 
 # calculate duration
