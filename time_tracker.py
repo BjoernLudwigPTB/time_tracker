@@ -1,3 +1,5 @@
+import csv
+
 import datetime
 import os
 import shlex
@@ -13,18 +15,26 @@ config = get_config()
 
 # log file location
 log_file = os.path.expanduser(config["log_file"])
+
 if not os.path.exists(log_file):
-    f = open(log_file, 'a')
-    f.write('date,action\n')
-    f.close()
+    with open(log_file, 'a') as f:
+        f.write('date,action\n')
+# We determine the current activity or set the default icon to be shown after startup.
+with open(log_file, 'r') as f:
+    last_logged = list(csv.reader(f))[-1][1]
+for entry in config["labels"]:
+    if entry[0] == last_logged:
+        startup_icon_path = os.path.join(entry[1])
+        break
+else:
+    startup_icon_path = os.path.join(config["default_icon"])
 
 # put labels into layout
 options = [entry[0] for entry in config["labels"]]
 menu_def = ['Menu', [*options, '---', 'Done', '---', 'Show report', 'Edit log', '---', 'Exit']]
 
-default_icon = os.path.join(config["default_icon"])
 
-tray = sg.SystemTray(menu=menu_def, filename=default_icon)
+tray = sg.SystemTray(menu=menu_def, filename=startup_icon_path)
 
 while True:
     menu_item = tray.Read(timeout=5000)  # timeout of 5 seconds
@@ -61,7 +71,7 @@ while True:
 
         # change icon according to selected item
         if menu_item == "Done":
-            icon_path = default_icon
+            icon_path = os.path.join(config["default_icon"])
         else:
             icon_path = [icon for name, icon in config["labels"] if name == menu_item][0]
         tray.Update(filename = icon_path)
